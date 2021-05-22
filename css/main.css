@@ -7,11 +7,15 @@ body {
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
   background: #141414;
+  height: 200vh;
 }
 
 header {
   background: rgba(114, 42, 42, 0);
-  padding: 5px 50px;
+  padding: 4px 50px;
+  width: 100%;
+  position: fixed;
+  background: #141414;
 }
 
 a {
@@ -42,7 +46,7 @@ ul a {
   font-weight: bold;
 }
 
-ul img {
+.logo {
   margin-right: 30px;
 }
 
@@ -51,8 +55,82 @@ header img {
 }
 
 .profile-icon {
-  width: 30px;
-  height: 30px;
+  width: 32px;
+  height: 32px;
   background: blue;
   border-radius: 5px;
+}
+
+.icon {
+  color: white;
+  width: 25px;
+}
+
+.profile {
+  display: flex;
+}
+
+.hero {
+  width: 100%;
+  height: 600px;
+  background-image: url('../img/wp2466087.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero h1 {
+  color: #e5e5e5;
+}
+
+.hero-container {
+  width: 36%;
+  padding: 0 50px;
+  color: #e5e5e5;
+}
+
+.hero-container p {
+  font-size: 1.3rem;
+}
+
+.hero-title {
+  width: 100%;
+  margin-top: 100px;
+}
+
+.button-container {
+  display: flex;
+  gap: 10px;
+}
+
+.button-play {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #000;
+  background: #fff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-weight: bold;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.button-play:hover,
+.button-info:hover {
+  opacity: 0.8;
+}
+
+.button-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+  background: rgb(92, 92, 92);
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-weight: bold;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
 }
