@@ -15,7 +15,12 @@ header {
   padding: 4px 50px;
   width: 100%;
   position: fixed;
-  background: #141414;
+  background: rgba(20, 20, 20, 0);
+  transition: 0.3s;
+}
+
+header.scrolled {
+  background: rgba(20, 20, 20, 1);
 }
 
 a {
